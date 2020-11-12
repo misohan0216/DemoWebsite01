@@ -1,0 +1,489 @@
+/* ==========================
+
+Template Name : Personal Portfolio Website design.
+Template URI : #
+Description : An awsome personal website portfolio
+Author : Sohan
+Author URI : #
+Version : 1.0
+Support : sohan.sl.0119@gmail.com
+
+=========================== */
+
+/* ==========================
+
+CSS Index
+---------
+
+1. Google Fonts
+2. Common CSS
+3. Reuseable components
+4. Home Section
+5. Services Section
+6. About Section
+7. Testimonial Section
+8. Contact Me Section
+9. Footer Section
+
+=========================== */
+
+/* 1. Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+/* 
+
+    font-family: 'Raleway', sans-serif;
+
+*/
+
+/* 2. Common CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    color: #000000;
+    font-size: 62.5%;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+}
+
+/* 3. Reuseable components */
+
+a.text-light:focus, a.text-light:hover{
+    color: #ffffff !important;
+}
+
+button:focus {
+    outline: 0rem;
+}
+
+.heading-border h1{
+    font-size: 4rem;
+}
+
+.heading-border p{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.heading-border h1::before{
+    content: '';
+    background: #7b1798;
+    height: .3rem;
+    width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+
+.heading-border h1::after{
+    content: '';
+    background: #7b1798;
+    height: 1rem;
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    display: block;
+    transform: translateY(8px);
+}
+
+/* 4. Home Section */
+
+.home-nav{
+    font-size: 1.6rem;
+}
+
+.home-nav .navbar-brand{
+    font-size: 3rem;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background: rgb(106,0,255);
+    background: linear-gradient(90deg, rgba(106,0,255,0.896796218487395) 0%, rgba(255,73,57,0.9023984593837535) 50%, rgba(119,0,255,0.896796218487395) 100%);
+}
+
+.navbar-brand{
+    border-bottom: 0.2rem solid #ffffff;
+    padding: 0 !important;
+}
+
+.navbar-nav li{
+    padding: 0 1rem;
+}
+
+.navbar-nav li a{
+    color: #ffffff !important;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: #00000000;
+}
+
+.fa-bars{
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+#home{
+    background: rgb(106,0,255);
+    background-image: linear-gradient(90deg, rgba(106,0,255,0.896796218487395) 0%, rgba(255,73,57,0.9023984593837535) 50%, rgba(119,0,255,0.896796218487395) 100%);
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+#home a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.promo-title{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 15rem;
+}
+
+.promo-description{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.play-btn{
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+/* .play-btn:hover{
+    text-decoration: none;
+    color: #ffffff;
+} */
+
+.play-btn i{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+.wave{
+    width: 100%;
+    height: 7rem;
+}
+
+/* 5. Services Section */
+
+#services{
+    padding: 8rem 0;
+}
+
+.services-img{
+    width: 25rem;
+    margin-top: 2rem;
+}
+
+.services-box{
+    padding: 3rem;
+    margin-bottom: 1rem;
+}
+
+.services-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.services-description{
+    font-size: 1.6rem;
+}
+
+#services .btn-primary{
+    font-size: 1.8rem;
+    box-shadow: none !important;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right , #a517ba, #5f1782);
+    padding: .8rem 2.5rem;
+}
+
+/* 6. About Section */
+
+#about{
+    background: #f8f9fa;
+    padding: 8rem 0;
+}
+
+.about-me{
+    font-size: 1.6rem;
+}
+
+.about-title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 8%;
+    margin-bottom: 3rem;
+}
+
+.about-me ul{
+    margin-left: 1rem;
+}
+
+.about-me ul li{
+    padding: .5rem 0;
+    letter-spacing: .15rem;
+}
+
+/* 7. Testimonial Section */
+
+#testimonial{
+    padding: 8rem 0;
+}
+
+.testimonial{
+    border-left: 0.4rem solid #7b1798;
+    margin: 5rem 0;
+    font-size: 1.8rem;
+}
+
+.testimonial p{
+    margin-bottom: 2rem;
+}
+
+.testimonial img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.user{
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+/* socialmedia */
+
+#socialmedia{
+    background: #f8f9fa;
+    padding: 8rem 0;
+}
+
+#socialmedia p{
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+#socialmedia ul{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#socialmedia ul li{
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2rem 2rem;
+}
+
+#socialmedia ul li a i{
+    background: #A5A5A5;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5rem;
+    transition: .7s;
+}
+
+#socialmedia ul li:nth-child(1) a i{
+    padding: 1rem 1.4rem;
+}
+
+#socialmedia ul li:nth-child(2) a i{
+    padding: 1rem 1rem;
+}
+
+#socialmedia ul li:nth-child(3) a i{
+    padding: 1rem 1.1rem;
+}
+
+#socialmedia ul li:nth-child(4) a i{
+    padding: 1rem 0.9rem;
+}
+
+#socialmedia ul li:nth-child(5) a i{
+    padding: 1rem 1rem;
+}
+
+#socialmedia ul li:nth-child(1):hover a i{
+    background: #0059FF;
+    color: #ffffff;
+}
+
+#socialmedia ul li:nth-child(2):hover a i{
+    background: #009EFF;
+    color: #ffffff;
+}
+
+#socialmedia ul li:nth-child(3):hover a i{
+    background: #004DFF;
+    color: #ffffff;
+}
+
+#socialmedia ul li:nth-child(4):hover a i{
+    background: #FF0000;
+    color: #ffffff;
+}
+
+#socialmedia ul li:nth-child(5):hover a i{
+    background: #CB1C04;
+    color: #ffffff;
+}
+
+/* 8. Contact Me Section */
+
+#contact{
+    padding: 8rem 0;
+    font-size: 1.8rem;
+}
+
+#contact input[type=text], #contact input[type=email], #contact textarea {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#contact .btn-primary{
+    font-size: 1.8rem;
+    box-shadow: none !important;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right , #a517ba, #5f1782);
+    padding: .8rem 2.5rem;
+    margin-top: 2rem;
+}
+
+/* 9. Footer Section */
+
+#footer{
+    background: rgb(106,0,255);
+    background-image: linear-gradient(90deg, rgba(106,0,255,0.896796218487395) 0%, rgba(255,73,57,0.9023984593837535) 50%, rgba(119,0,255,0.896796218487395) 100%);
+    color: #ffffff;
+}
+
+.footer-padding{
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+.footer-box{
+    padding: 2rem;
+}
+
+.footer-box a{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.footer-box p{
+    font-size: 1.8rem;
+}
+
+.copyright a{
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.copyright a:hover{
+    color: #ccc;
+}
+
+.contact-list{
+    margin-top: 1.5rem;
+}
+
+.subscribe{
+    margin-top: 1.5rem;
+}
+
+.footer-box .fas{
+    margin-right: .8rem;
+    font-size: 1.8rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    padding-top: .7rem;
+    border-radius: .2rem;
+    background: rgb(106,0,255);
+    background-image: linear-gradient(90deg, rgba(255,73,57,0.9023984593837535) 0%,  rgba(106,0,255,0.896796218487395) 100%);
+}
+
+.footer-box .btn-primary{
+    font-size: 1.8rem;
+    box-shadow: none !important;
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right , #a517ba, #5f1782);
+    padding: .8rem 2.5rem;
+    margin-top: 2rem;
+}
+
+.footer-box .form-control{
+    font-size: 1.6rem;
+    box-shadow: none  !important;
+    border-radius: 0;
+    margin-top: 2.5rem;
+    max-width: 25rem;
+}
+
+/* ========== Responsive CSS =========== */
+
+@media only screen and (max-width: 768px){
+    .col-md-6, .col-md-4{
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    html,body{
+        font-size: 52.2%;
+    }
+
+    
+    .heading-border h1::after {
+        transform: translateY(18px);
+    }
+
+    .footer-box {
+        margin-left: 2rem;
+    }
+
+    .wave {
+        height: 6rem;
+    }
+}
